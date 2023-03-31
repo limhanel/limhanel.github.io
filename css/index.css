@@ -208,11 +208,10 @@ ul.social-icon li img {
 #header {
   background-color: #fff;
   top: 0;
-  position: -webkit-sticky;
-  position: sticky;
   border-bottom: 1px solid #ccc;
   z-index: 1000;
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
   height: 60px;
 }
 
