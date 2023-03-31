@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body{font-family: 'Noto Sans KR', sans-serif;}
+a,p,span{color:#333;}
+
+.bg-light{background-color: rgba(255, 255, 255, 0.8) !important;}
+
+h2{text-align:center;}
+h4{font-size:1.2em; text-align:center;}
+
+.cont2{ background-color: rgba(255, 255, 255, 0.685); padding:1em 0;}
+.cont2 .est {margin:0.5em 0; text-align: center}
+.cont2 .est-box{border: 1px solid #e0e0e0}
+.cont2 p{text-align:center; display: inline-block; margin-bottom:initial;}
+.cont2 input[type="text"]{text-align: center; width:10%; color:#768FFF; border:0;}
+.mainText h2{font-weight:550; font-size:2.5rem}
+
+.mainText h2{font-weight:550; font-size:2.5rem}
+
+.footer{background-color: rgb(51, 51, 51); padding:3em 0;}
+.footer span, .footer p{color:#fff;}
+.footer span{display:block; margin-bottom:10px;}
+.footer img{width:100%;}
+.footer .info{padding-left:4em;}
