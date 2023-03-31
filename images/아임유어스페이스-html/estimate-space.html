@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="Subject" content="아임유어스페이스">
+	<meta name="Title" content="아임유어스페이스">
+	<meta name="description" content="아임유어스페이스">
+	<meta name="keywords" content="">
+    <meta name="author" content="limhanel">    
+    
+    <title>아임유어스페이스</title>
+
+    <link rel="shortcut icon" href="images/imyourspace.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/estimate-space.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estimate.css">
+    
+    
+
+</head>
+
+<body>
+  <!--header-->  
+  <div class="nav_area fixed-top" style="box-shadow:2px 2px 2px rgba(211, 211, 211, 0.863)">
+   <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <ul class="navbar-nav nav1">
+         <li class="nav-item active"  style="background-color: #2962FF; border-radius:10px;">
+             <a class="nav-link" href="index.html" style="color:aliceblue">아임유어스페이스</a>
+         </li> 
+         <li class="nav-item">
+            <a class="nav-link" href="https://www.imyourbox.com" >아임유어박스</a>
+        </li> 
+
+      </ul> 
+   </nav>
+   <nav class="navbar navbar-expand-sm bg-light justify-content-end position:relative;">
+      <a class="navbar-brand" style="position:absolute; left:1em;;" href="index.html"> <img src="images/logo.png" style="width:150px;"></a> 
+        <ul class="navbar-nav" style="float:right">
+          
+           <li class="nav-item active">
+               <a class="nav-link" href="">아임유어스페이스란?</a>
+           </li> 
+           <li class="nav-item">
+              <a class="nav-link active" style="color:#2962FF; font-weight: bold" href="estimate.html" >견적내기</a>
+          </li> 
+  
+        </ul> 
+     </nav>
+
+     <div class="cont2">     
+            <div class="est-box row">
+              <div class="est col-md-2">
+                 <p style="text-align: center; color:#FFC400; ">MY SPACE</p>
+              </div>     
+            <div class="est col-md-2">
+                 <span></span> <input type="text" value="0" id="space-num"><span>스페이스</span>
+            </div> 
+            <div class="est col-md-2">
+             <span></span> <input type="text" value="0" id="box-num"><span>박스</span>
+            </div>
+            <div class="est col-md-6">
+             <p style="color: rgb(175, 175, 175); font-size:0.8em;">해당 가격은 할인가가 적용되지 않은 1달 금액이며, 상세견적 상담과 장기 이용시 가격변동이 있을 수 있습니다.</p>   
+         </div> 
+            </div> <!--ext-box--> 
+            <a class="btn btn-primary btn-block" href="info.html" role="button"style="margin-top:1em;" >스페이스 대여하기<i class="fa fa-angle-right" style="font-size:24px; margin-left:10px;"></i></a> 
+          </div> <!--cont2-->
+    </div> <!--nav_area-->
+
+ <!--container-->         
+<div class="container">
+  <div class="cont1">
+      <div class="row" style="margin-bottom: 3em;">
+        <button type="button" class="btn btn-outline-primary col-6" onclick="location.href='estimate.html'">박스 계산하기</button>
+        <button type="button" class="btn btn-primary col-6"onclick="location.href='estimate-space.html'">스페이스 계산하기</button>
+    </div> 
+    <p style="color:rgb(214, 214, 214); text-align:center;">MY SPACE</p>
+      <h2 class="h2" style="color:#2962FF">내 스페이스 계산하기
+      </h2>
+      <p style="color:rgb(124, 124, 124); display:block; margin-bottom:3em; text-align:center;">맡길 물건을 선택하면 필요한 박스갯수를 알려드립니다</p>
+
+     
+      <div class="row">
+
+         <div class="col-3">
+            <div class="card tooltip01">
+              <img class="card-img-top" src="images/coat.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                  <h4 class="card-title">겨울패딩/코트</h4>
+                  <div class="row">
+                    <button type="button" onclick="back1()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                      <input type="text" value="0" id="price1" class="col-6 item-number" style="text-align:center;">
+                   <button type="button" onclick="next1()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                  </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip02">
+                <img class="card-img-top" src="images/towel.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">침구류</h4>
+                    <div class="row">
+                    <button type="button" onclick="back2()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price2" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next2()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->    
+        <div class="col-3">
+            <div class="card tooltip03">
+                <img class="card-img-top" src="images/bicycle.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">자전거</h4>
+                    <div class="row">
+                    <button type="button" onclick="back3()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price3" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next3()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip04">
+                <img class="card-img-top" src="images/snowboard.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">스키/보드</h4>
+                    <div class="row">
+                    <button type="button" onclick="back4()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price4" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next4()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip05">
+                <img class="card-img-top" src="images/hometraining.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">홈트레이닝</h4>
+                    <div class="row">
+                    <button type="button" onclick="back5()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price5" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next5()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip06">
+                <img class="card-img-top" src="images/golf.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">골프용품</h4>
+                    <div class="row">
+                    <button type="button" onclick="back6()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price6" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next6()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip07">
+                <img class="card-img-top" src="images/camping.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">캠핑용품</h4>
+                    <div class="row">
+                    <button type="button" onclick="back7()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price7" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next7()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip08">
+                <img class="card-img-top" src="images/carrier.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">캐리어</h4>
+                    <div class="row">
+                    <button type="button" onclick="back8()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price8" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next8()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3--> 
+        <div class="col-3">
+            <div class="card tooltip09">
+                <img class="card-img-top" src="images/fishing.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">낚시용품</h4>
+                    <div class="row">
+                    <button type="button" onclick="back9()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price9" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next9()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->   
+        <div class="col-3">
+            <div class="card tooltip10">
+                <img class="card-img-top" src="images/ect.svg" alt="item">
+                <div class="card-img-overlay" style="text-align:bottom;">
+                    <h4 class="card-title">기타</h4>
+                    <div class="row">
+                    <button type="button" onclick="back10()" class="btn btn-outline-primary col-3 pl-num"><i class="fa fa-angle-left" style="font-size:24px"></i></button>
+                        <input type="text" value="0" id="price10" class="col-6 item-number" style="text-align:center;">
+                    <button type="button" onclick="next10()" class="btn btn-outline-primary col-3 mi-num"><i class="fa fa-angle-right" style="font-size:24px"></i></button>
+                    </div> <!--row-->
+                </div> <!--card-img-overlay-->
+            </div> <!--card--> 
+        </div> <!--col-3-->    
+                                              
+    </div><!--row-->  
+  </div> <!--cont1-->
+
+
+</div> <!--container-->
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+          <div class="row"> 
+            <div class="logo col-sm-2">
+                <img src="images/logo1.png" alt="흰색로고" class="footer_logo">
+            </div> <!--logo-->   
+            
+            <div class="info col-sm-10">
+                <span>대표이사 안동석<br>사업자등록번호 126-86-03002</span>
+                <span>대표번호 031-635-1471</span>
+                <span>이메일 1472&#64;newatn.co.kr</span>
+                <span>아임유어스페이스 경기도 이천시 마장면 덕평로 771-10</span>
+                <p style="color:rgb(173, 173, 173)">Copyright &copy; 2019 I’m your box Inc. All Rights Reserved.</p>      
+            </div> <!--info-->
+          </div> <!--row-->
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+          $('.tooltip01').tooltip({title: "겨울패딩은 10개까지 0.x 스페이스 입니다", animation: true}); 
+          $('.tooltip02').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip03').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip04').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip05').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip06').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip07').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip08').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip09').tooltip({title: "크기는 00cm x 00cm 기준입니다", animation: true});
+          $('.tooltip10').tooltip({title: "기타 크기는 자세한 상담으로 연결됩니다", animation: true});    });
+        </script>
+</body>
+ 
+
+</html>

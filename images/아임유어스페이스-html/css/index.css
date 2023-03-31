@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body{font-family: 'Noto Sans KR', sans-serif;}
+a,p,span{color:#333;}
+
+.bg-light{background-color: rgba(255, 255, 255, 0.8) !important;}
+
+h2{text-align:center;}
+h4{font-size:2.5em; text-align:center;}
+
+
+.mainText h2{font-weight:550; font-size:2.5rem}
+.cont1{margin: 5em 0;}
+.cont1 img{width:100%;}
+
+.cont2{margin: 5em 0;}
+.cont2 img{width:80%; margin:0 10%;}
+
+.cont2 p{text-align:center;}
+.cont2 p.bold{font-weight: 550; font-size:1.2em; margin-top:1.5em;}
+.cont2 p.text{padding:0 15%;}
+
+.cont3{background-color: rgb(236, 236, 236); padding:1.5em 0;}
+.cont3 p{display:inline-block; margin-bottom:0; text-align: center}
+
+.cont4{margin: 5em 0;}
+.cont4 p{text-align:center;}
+.cont4 a{background-color: #768FFF; border-color:#768FFF}
+.cont4 h4{font-size:2em; }
+.cont4 .card-title{margin-bottom:initial;}
+.cont4 img.card-img-top{width:50%; margin:25%;}
+
+
+.cont5{margin: 10em 0;}
+.cont5 p{text-align:center;}
+.cont5 h4{ font-size: 1.7em;}
+.cont5 .row{margin:6em 0;}
+.cont5 .row img{width:100%;}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 10%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-inner{
+    width:100vw;
+    max-height: 80vh !important;
+  }
+
+
+.footer{background-color: rgb(51, 51, 51); padding:3em 0;}
+.footer span, .footer p{color:#fff;}
+.footer span{display:block; margin-bottom:10px;}
+.footer img{width:100%;}
+.footer .info{padding-left:4em;}

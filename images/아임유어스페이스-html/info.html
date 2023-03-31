@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="Subject" content="아임유어스페이스">
+	<meta name="Title" content="아임유어스페이스">
+	<meta name="description" content="아임유어스페이스">
+	<meta name="keywords" content="">
+    <meta name="author" content="limhanel">    
+    
+    <title>아임유어스페이스</title>
+
+    <link rel="shortcut icon" href="images/imyourspace.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/estimate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/info.css">
+    <link href="/resources/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/resources/image/icon/HalfLife.ico" rel="shortcuticon">
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="/resources/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/resources/bootstrap/js/respond.js"></script>
+
+</head>
+
+<body>
+  <!--header-->  
+  <div class="nav_area fixed-top" style="box-shadow:2px 2px 2px rgba(211, 211, 211, 0.863)">
+   <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <ul class="navbar-nav nav1">
+         <li class="nav-item active"  style="background-color: #2962FF; border-radius:10px;">
+             <a class="nav-link" href="index.html" style="color:aliceblue">아임유어스페이스</a>
+         </li> 
+         <li class="nav-item">
+            <a class="nav-link" href="https://www.imyourbox.com" >아임유어박스</a>
+        </li> 
+
+      </ul> 
+   </nav>
+   <nav class="navbar navbar-expand-sm bg-light justify-content-end position:relative;">
+      <a class="navbar-brand" style="position:absolute; left:1em;;" href="index.html"> <img src="images/logo.png" style="width:150px;"></a> 
+        <ul class="navbar-nav" style="float:right">
+          
+           <li class="nav-item active">
+               <a class="nav-link" href="#none">아임유어스페이스란?</a>
+           </li> 
+           <li class="nav-item">
+              <a class="nav-link active" href="estimate.html" >견적내기</a>
+          </li> 
+  
+        </ul> 
+     </nav>
+    </div> <!--nav_area-->
+
+ <!--container-->         
+<div class="container" style="padding:10em 0;">
+            <!-- 모달창 -->
+            <div class="modal fade" id="defaultModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title">알림</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-contents"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <!--// 모달창 -->
+                <hr/>
+                    <!-- 본문 들어가는 부분 -->
+                     
+                    <div class="cont2" style="margin-bottom:3em;">     
+                            <div class="est-box row" style="padding:2em 0;">
+                              <div class="est col-md-12" >
+                                 <p style="text-align: center; color:#FFC400; ">MY SPACE</p>
+                              </div>     
+                            <div class="est col-md-6">
+                                 <span></span> <input type="text" value="0" id="space-num"><span>스페이스</span>
+                            </div> 
+                            <div class="est col-md-6">
+                             <span></span> <input type="text" value="0" id="box-num"><span>박스</span>
+                            </div>
+                            <div class="est col-md-12">
+                             <p style="color: rgb(175, 175, 175); font-size:0.8em; ">해당 가격은 할인가가 적용되지 않은 1달 금액이며, 상세견적 상담과 장기 이용시 가격변동이 있을 수 있습니다.</p>   
+                         </div> 
+                            </div> <!--ext-box--> 
+                          </div> <!--cont2-->
+                    
+     
+            <form class="form-horizontal" role="form" method="post" action="javascript:alert( 'success!' );">
+                <div class="form-group" style="margin-bottom: 2em;">
+                    <label for="provision" class="col-lg-2 control-label" style="font-weight: 550;">정보제공에 관한 동의</label>
+                    <div class="col-lg-12" id="provision">
+                        <textarea class="form-control" rows="8" style="resize:none; margin-bottom:1em;">
+1. 개인정보의 수집항목
+아임유어스페이스는 서비스 이용시 고객 서비스 제공에 필요한 최소한의 정보를 수집하고 있으며 개인정보파일에 수집되는 항목은 다음과 같습니다.
+<스페이스대여하기>
+- 이름, 연락처, 이메일, 주소, 서비스 이용내역
+
+2. 개인정보 수집목적
+아임유어스페이스가 제공하는 맞춤화된 서비스 및 개발, 문의 등을 위해 수집합니다. 아임유어스페이스는 원칙적으로 이용자의 개인정보를 수집 및 이용 목적범위 내에서 처리하며, 이용자의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.
+
+가. 회원관리
+회원 맞춤 서비스 제공, 개인식별, 전체 서비스의 원활한 운영을 위한 관리, 회원탈퇴 의사 확인
+
+나. 고유서비스 이용 및 신규 개발
+아임유어스페이스에서 제공하는 컨설팅을 비롯한 각종 고유 서비스 제공의 필요 시, 신규 서비스 개발 시 의견수렴 및 안내
+
+3. 개인정보의 보유기간
+- 홈페이지 이용에 따라 수집된 개인정보 보유기간은 2년입니다.
+
+4. 기타사항(거부할 권리 등)
+- 서비스 이용에 따른 개인정보의 수집, 이용, 제공에 대해 귀하께서 동의하신 내용은 언제든지 철회 또는 거부하실 수 있습니다. 이의 경우 서비스를 이용할 수 없는것으로 처리되며 동의철회(거부)는 개인정보관리담당(책임자)에게 서면, 전화 이메일 등으로 연락하시면 즉시 개인정보의 삭제 및 파기 등 필요한 조치를 하겠습니다.
+- 개인정보제공 동의 거부에 의한 홈페이지 이용 제한
+ · 아임유어스페이스 홈페이지 : 기본 서비스에 대한 이용 제한 없음
+ · 아임유어스페이스 : 박스대여 및 스페이스 대여 서비스 이용 제한
+ 
+
+
+아임유어스페이스 개인정보보호책임 관련 신고 및 문의
+전화번호 : 031-637-6368
+팩스 : 031-637-6369
+이메일 : atn@newatn.co.kr
+우편 : 경기도 이천시 마장면 덕평로771-10
+아임유어스페이스 관리팀 책임자 앞
+근무시간 : 평일 09:00 - 18:00
+(토요일 및 일요일, 공휴일은 휴무 / 점심시간 12:00~13:00)
+
+
+기타 개인정보에 관한 상담 및 문의가 필요한 경우에는 개인정보침해신고센터 등으로 문의하실 수 있습니다.
+
+한국인터넷진흥원 개인정보침해신고센터 (www.1336.or.kr / 118)
+정보보호마크인증위원회 (www.eprivacy.or.kr / 02-580-0533~4)
+경찰청 사이버테러대응센터 (www.ctrc.go.kr / 182)
+
+                        </textarea>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="provisionYn" name="provisionYn" value="Y" autofocus="autofocus" checked>
+                                동의합니다(필수)
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="provisionYn" name="provisionYn" value="N">
+                                동의하지 않습니다
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="memberInfo" class="col-lg-2 control-label">개인정보취급방침</label>
+                    <div class="col-lg-10" id="memberInfo">
+                        <textarea class="form-control" rows="8" style="resize:none">
+    개인정보의 항목 및 수집방법
+                        </textarea>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="memberInfoYn" name="memberInfoYn" value="Y" checked>
+                                동의합니다.
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" id="memberInfoYn" name="memberInfoYn" value="N">
+                                동의하지 않습니다.
+                            </label>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="form-group" id="divId">
+                    <div class="form-group" id="divName">
+                        <label for="inputName" class="col-lg-2 control-label">이름</label>
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control onlyHangul" id="name" data-rule-required="true" placeholder="한글만 입력 가능합니다" maxlength="15">
+                            </div>
+                        </div>  
+                    </div>                     
+                    <!-- <label for="inputId" class="col-lg-2 control-label">아이디</label>
+                    <div class="col-lg-12">
+                        <input type="text" class="form-control onlyAlphabetAndNumber" id="id" data-rule-required="true" placeholder="30자이내의 알파벳, 언더스코어(_), 숫자만 입력 가능합니다." maxlength="30">
+                    </div> -->
+                
+                
+                <!-- <div class="form-group" id="divPassword">
+                    <label for="inputPassword" class="col-lg-2 control-label">패스워드</label>
+                    <div class="col-lg-12">
+                        <input type="password" class="form-control" id="password" name="excludeHangul" data-rule-required="true" placeholder="패스워드" maxlength="30">
+                    </div>
+                </div>
+                <div class="form-group" id="divPasswordCheck">
+                    <label for="inputPasswordCheck" class="col-lg-2 control-label">패스워드 확인</label>
+                    <div class="col-lg-12">
+                        <input type="password" class="form-control" id="passwordCheck" data-rule-required="true" placeholder="패스워드 확인" maxlength="30">
+                    </div>
+                </div> -->
+                
+                 
+                <!-- <div class="form-group" id="divNickname">
+                    <label for="inputNickname" class="col-lg-2 control-label">별명</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" id="nickname" data-rule-required="true" placeholder="별명" maxlength="15">
+                    </div>
+                </div> -->
+                 
+
+                <div class="form-group" id="divPhoneNumber">
+                    <label for="inputPhoneNumber" class="col-lg-2 control-label">휴대폰 번호</label>
+                    <div class="col-lg-12">
+                        <input type="tel" class="form-control onlyNumber" id="phoneNumber" data-rule-required="true" placeholder="-를 제외하고 숫자만 입력해주세요" maxlength="11">
+                    </div>
+                </div>
+                <div class="form-group" id="divEmail">
+                        <label for="inputEmail" class="col-lg-2 control-label">이메일</label>
+                        <div class="col-lg-12">
+                            <input type="email" class="form-control" id="email" data-rule-required="true" placeholder="이메일을 입력해주세요" maxlength="60">
+                        </div>
+                    </div>
+                    <div class="form-group" id="divAddress">
+                            <label for="inputAddress" class="col-lg-2 control-label">특이사항</label>
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" id="Address
+                                " data-rule-required="true" placeholder="주소를 입력해주세요" maxlength="100" >
+                            </div>
+                        </div>                    
+                <div class="form-group" id="divUniqueness">
+                    <label for="inputUniqueness" class="col-lg-2 control-label">특이사항</label>
+                    <div class="col-lg-12">
+                        <input type="text" class="form-control" id="Uniqueness
+                        " data-rule-required="true" placeholder="특이사항이 있으시다면 입력해주세요" maxlength="1000" style="height:150px;">
+                    </div>
+                </div>
+                <!-- <div class="form-group">
+                    <label for="inputPhoneNumber" class="col-lg-2 control-label">성별</label>
+                    <div class="col-lg-10">
+                        <select class="form-control" id="gender">
+                            <option value="M">남</option>
+                            <option value="F">여</option>
+                        </select>
+                    </div>
+                </div> -->
+                <!-- <div class="form-group">
+                    <label for="inputEmailReceiveYn" class="col-lg-2 control-label">이메일 수신여부</label>
+                    <div class="col-lg-12">
+                        <label class="radio-inline">
+                            <input type="radio" id="emailReceiveYn" name="emailReceiveYn" value="Y" checked> 동의합니다.
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" id="emailReceiveYn" name="emailReceiveYn" value="N"> 동의하지 않습니다.
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPhoneNumber" class="col-lg-2 control-label">SMS 수신여부</label>
+                    <div class="col-lg-12">
+                        <label class="radio-inline">
+                            <input type="radio" id="smsReceiveYn" name="smsReceiveYn" value="Y" checked> 동의합니다.
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" id="smsReceiveYn" name="smsReceiveYn" value="N"> 동의하지 않습니다.
+                        </label>
+                    </div>
+                </div> -->
+                <div class="form-group" style="margin-top:3em;">
+                    <div class="col-lg-offset-2 col-lg-12">
+                        <button type="submit" class="btn btn-default btn-primary btn-block">대여 문의하기</button>
+                    </div>
+                </div>
+            </form>
+             
+             
+            <script>
+             
+                $(function(){
+                    //모달을 전역변수로 선언
+                    var modalContents = $(".modal-contents");
+                    var modal = $("#defaultModal");
+                     
+                    $('.onlyAlphabetAndNumber').keyup(function(event){
+                        if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                            var inputVal = $(this).val();
+                            $(this).val($(this).val().replace(/[^_a-z0-9]/gi,'')); //_(underscore), 영어, 숫자만 가능
+                        }
+                    });
+                     
+                    $(".onlyHangul").keyup(function(event){
+                        if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                            var inputVal = $(this).val();
+                            $(this).val(inputVal.replace(/[a-z0-9]/gi,''));
+                        }
+                    });
+                 
+                    $(".onlyNumber").keyup(function(event){
+                        if (!(event.keyCode >=37 && event.keyCode<=40)) {
+                            var inputVal = $(this).val();
+                            $(this).val(inputVal.replace(/[^0-9]/gi,''));
+                        }
+                    });
+                     
+                    //------- 검사하여 상태를 class에 적용
+                    $('#id').keyup(function(event){
+                         
+                        var divId = $('#divId');
+                         
+                        if($('#id').val()==""){
+                            divId.removeClass("has-success");
+                            divId.addClass("has-error");
+                        }else{
+                            divId.removeClass("has-error");
+                            divId.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#password').keyup(function(event){
+                         
+                        var divPassword = $('#divPassword');
+                         
+                        if($('#password').val()==""){
+                            divPassword.removeClass("has-success");
+                            divPassword.addClass("has-error");
+                        }else{
+                            divPassword.removeClass("has-error");
+                            divPassword.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#passwordCheck').keyup(function(event){
+                         
+                        var passwordCheck = $('#passwordCheck').val();
+                        var password = $('#password').val();
+                        var divPasswordCheck = $('#divPasswordCheck');
+                         
+                        if((passwordCheck=="") || (password!=passwordCheck)){
+                            divPasswordCheck.removeClass("has-success");
+                            divPasswordCheck.addClass("has-error");
+                        }else{
+                            divPasswordCheck.removeClass("has-error");
+                            divPasswordCheck.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#name').keyup(function(event){
+                         
+                        var divName = $('#divName');
+                         
+                        if($.trim($('#name').val())==""){
+                            divName.removeClass("has-success");
+                            divName.addClass("has-error");
+                        }else{
+                            divName.removeClass("has-error");
+                            divName.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#nickname').keyup(function(event){
+                         
+                        var divNickname = $('#divNickname');
+                         
+                        if($.trim($('#nickname').val())==""){
+                            divNickname.removeClass("has-success");
+                            divNickname.addClass("has-error");
+                        }else{
+                            divNickname.removeClass("has-error");
+                            divNickname.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#email').keyup(function(event){
+                         
+                        var divEmail = $('#divEmail');
+                         
+                        if($.trim($('#email').val())==""){
+                            divEmail.removeClass("has-success");
+                            divEmail.addClass("has-error");
+                        }else{
+                            divEmail.removeClass("has-error");
+                            divEmail.addClass("has-success");
+                        }
+                    });
+                     
+                    $('#phoneNumber').keyup(function(event){
+                         
+                        var divPhoneNumber = $('#divPhoneNumber');
+                         
+                        if($.trim($('#phoneNumber').val())==""){
+                            divPhoneNumber.removeClass("has-success");
+                            divPhoneNumber.addClass("has-error");
+                        }else{
+                            divPhoneNumber.removeClass("has-error");
+                            divPhoneNumber.addClass("has-success");
+                        }
+                    });
+                     
+                     
+                    //------- validation 검사
+                    $( "form" ).submit(function( event ) {
+                         
+                        var provision = $('#provision');
+                        var memberInfo = $('#memberInfo');
+                        var divId = $('#divId');
+                        var divPassword = $('#divPassword');
+                        var divPasswordCheck = $('#divPasswordCheck');
+                        var divName = $('#divName');
+                        var divNickname = $('#divNickname');
+                        var divEmail = $('#divEmail');
+                        var divPhoneNumber = $('#divPhoneNumber');
+                         
+                        //회원가입약관
+                        if($('#provisionYn:checked').val()=="N"){
+                            modalContents.text("회원가입약관에 동의하여 주시기 바랍니다."); //모달 메시지 입력
+                            modal.modal('show'); //모달 띄우기
+                             
+                            provision.removeClass("has-success");
+                            provision.addClass("has-error");
+                            $('#provisionYn').focus();
+                            return false;
+                        }else{
+                            provision.removeClass("has-error");
+                            provision.addClass("has-success");
+                        }
+                         
+                        //개인정보취급방침
+                        if($('#memberInfoYn:checked').val()=="N"){
+                            modalContents.text("개인정보취급방침에 동의하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            memberInfo.removeClass("has-success");
+                            memberInfo.addClass("has-error");
+                            $('#memberInfoYn').focus();
+                            return false;
+                        }else{
+                            memberInfo.removeClass("has-error");
+                            memberInfo.addClass("has-success");
+                        }
+                         
+                        //아이디 검사
+                        if($('#id').val()==""){
+                            modalContents.text("아이디를 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divId.removeClass("has-success");
+                            divId.addClass("has-error");
+                            $('#id').focus();
+                            return false;
+                        }else{
+                            divId.removeClass("has-error");
+                            divId.addClass("has-success");
+                        }
+                         
+                        //패스워드 검사
+                        if($('#password').val()==""){
+                            modalContents.text("패스워드를 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divPassword.removeClass("has-success");
+                            divPassword.addClass("has-error");
+                            $('#password').focus();
+                            return false;
+                        }else{
+                            divPassword.removeClass("has-error");
+                            divPassword.addClass("has-success");
+                        }
+                         
+                        //패스워드 확인
+                        if($('#passwordCheck').val()==""){
+                            modalContents.text("패스워드 확인을 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divPasswordCheck.removeClass("has-success");
+                            divPasswordCheck.addClass("has-error");
+                            $('#passwordCheck').focus();
+                            return false;
+                        }else{
+                            divPasswordCheck.removeClass("has-error");
+                            divPasswordCheck.addClass("has-success");
+                        }
+                         
+                        //패스워드 비교
+                        if($('#password').val()!=$('#passwordCheck').val() || $('#passwordCheck').val()==""){
+                            modalContents.text("패스워드가 일치하지 않습니다.");
+                            modal.modal('show');
+                             
+                            divPasswordCheck.removeClass("has-success");
+                            divPasswordCheck.addClass("has-error");
+                            $('#passwordCheck').focus();
+                            return false;
+                        }else{
+                            divPasswordCheck.removeClass("has-error");
+                            divPasswordCheck.addClass("has-success");
+                        }
+                         
+                        //이름
+                        if($('#name').val()==""){
+                            modalContents.text("이름을 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divName.removeClass("has-success");
+                            divName.addClass("has-error");
+                            $('#name').focus();
+                            return false;
+                        }else{
+                            divName.removeClass("has-error");
+                            divName.addClass("has-success");
+                        }
+                         
+                        //별명
+                        if($('#nickname').val()==""){
+                            modalContents.text("별명을 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divNickname.removeClass("has-success");
+                            divNickname.addClass("has-error");
+                            $('#nickname').focus();
+                            return false;
+                        }else{
+                            divNickname.removeClass("has-error");
+                            divNickname.addClass("has-success");
+                        }
+                         
+                        //이메일
+                        if($('#email').val()==""){
+                            modalContents.text("이메일을 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divEmail.removeClass("has-success");
+                            divEmail.addClass("has-error");
+                            $('#email').focus();
+                            return false;
+                        }else{
+                            divEmail.removeClass("has-error");
+                            divEmail.addClass("has-success");
+                        }
+                         
+                        //휴대폰 번호
+                        if($('#phoneNumber').val()==""){
+                            modalContents.text("휴대폰 번호를 입력하여 주시기 바랍니다.");
+                            modal.modal('show');
+                             
+                            divPhoneNumber.removeClass("has-success");
+                            divPhoneNumber.addClass("has-error");
+                            $('#phoneNumber').focus();
+                            return false;
+                        }else{
+                            divPhoneNumber.removeClass("has-error");
+                            divPhoneNumber.addClass("has-success");
+                        }
+                         
+                     
+                    });
+                     
+                });
+                 
+            </script>
+                    <!--// 본문 들어가는 부분 -->
+                <hr/>
+</div> <!--container-->
+
+<!--footer-->
+    <div class="footer">
+        <div class="container">
+          <div class="row"> 
+            <div class="logo col-sm-2">
+                <img src="images/logo1.png" alt="흰색로고" class="footer_logo">
+            </div> <!--logo-->   
+            
+            <div class="info col-sm-10">
+                <span>대표이사 안동석<br>사업자등록번호 126-86-03002</span>
+                <span>대표번호 031-635-1471</span>
+                <span>이메일 1472&#64;newatn.co.kr</span>
+                <span>아임유어스페이스 경기도 이천시 마장면 덕평로 771-10</span>
+                <p style="color:rgb(173, 173, 173)">Copyright &copy; 2019 I’m your box Inc. All Rights Reserved.</p>      
+            </div> <!--info-->
+          </div> <!--row-->
+        </div>
+    </div>
+
+</body>
+ 
+
+</html>
