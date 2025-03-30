@@ -223,10 +223,10 @@ ul.social-icon {
 #header {
     background-color: #fff;
     top: 0;
+    position: sticky;
     border-bottom: 1px solid #ccc;
     z-index: 1000;
-    // position: relative;
-    position: sticky;
+    position: relative;
     height: 60px;
     .header-container {
         &::after {
@@ -510,8 +510,6 @@ ul.social-icon {
 }
 
 
-
-
 /*-----cont5 area------*/
 
 .cont5 {
@@ -583,7 +581,6 @@ ul.social-icon {
         }
     }
 }
-
 
 
 /*-----cont8 area------*/
